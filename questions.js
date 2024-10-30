@@ -2,9 +2,16 @@ module.exports = {
   init: [
     {
       type: 'input',
-      name: 'src',
-      message: 'What is your source code folder?',
-      default: 'src',
+      name: 'root',
+      message: 'What is your project root folder?',
+      default: '.',
+    },
+    {
+      type: 'input',
+      name: 'sourceFolders',
+      message:
+        'Where should we look for source files? (if multiple, use "," as a separator without spaces)',
+      default: ['src'],
     },
     {
       type: 'input',
